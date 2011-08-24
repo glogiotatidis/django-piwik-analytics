@@ -1,0 +1,52 @@
+* Piwik Analytics for Django
+
+Piwik Analytics for Django provides an easy way to intergrate Piwik
+into your Django Project.
+
+Piwik is an open source / free software alternative to Google
+Analytics and allows you to have your analytics server.
+
+This application provides a template tag that injects the required
+html snippet in your pages. Support different /site ids/ and /hosts/
+using the /sites/ django application.
+
+It is an extension to the [[https://github.com/clintecker/django-google-analytics/][django-google-analytics]] application.
+
+** Usage
+*** Simple direct use
+ 1. Add the /piwik_analytics/ application to your /INSTALLED_APPS/ section of your /settings.py/
+ 2. In your based template, usally a /base.html/, insert this tag at the very top:
+
+    {% load piwik_analytics %}
+
+ 3. In the same template, insert the following code right before the
+    colosing body tag:
+
+    {% piwik_analytics "url example.com/piwik/ id 1" %}
+
+    Make sure that you replace example.com/piwik/ with your piwik
+    installation url and 1 with your site id.
+
+
+*** Through the /sites/ django application
+ 1. Add the /piwik_analytics/ application to your /INSTALLED_APPS/ section of your /settings.py/
+ 2. Add the /google_analytics/ application to your /INSTALLED_APPS/ section of your /settings.py/
+ 3. Add /GOOGLE_ANALYTICS_MODEL = True/ to your /settings.py/.
+ 4. Run a ./manage.py syncdb to add the database tables
+ 5. Go to your project's admin page (usally /admin/) and click /Google Analytics/Sites/
+ 6. In your based template, usally a /base.html/, insert this tag at the very top:
+
+    {% load piwik_analytics %}
+
+ 7. In the same template, insert the following code right before the
+    colosing body tag:
+
+    {% piwik_analytics %}
+
+    Make sure that you replace example.com/piwik/ with your piwik
+    installation url and 1 with your site id.
+
+
+** License
+
+   This project is distributed under the [[http://www.gnu.org/licenses/agpl-3.0.txt][Affero GPL License v3]]
