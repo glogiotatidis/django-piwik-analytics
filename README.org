@@ -10,7 +10,12 @@ This application provides a template tag that injects the required
 html snippet in your pages. Support different /site ids/ and /hosts/
 using the /sites/ django application.
 
-It is an extension to the [[https://github.com/clintecker/django-google-analytics/][django-google-analytics]] application.
+It is an extension to the [[https://github.com/clintecker/django-google-analytics/][django-google-analytics]] application and
+requires it to be installed.
+
+** Installation
+ 1. Download and install django-google-analytics
+ 2. Download and install django-piwik-analytics
 
 ** Usage
 *** Simple direct use
