@@ -7,7 +7,7 @@ setup(name='piwik_analytics',
       author='Giorgos Logiotatidis',
       author_email='seadog@sealabs.net',
       url='http://github.com/glogiotatidis/django-piwik-analytics/tree/master',
-      packages=['piwik_analytics', 'piwik_analytics.templatetags']
+      packages=['piwik_analytics', 'piwik_analytics.templatetags'],
       package_data={'piwik_analytics': ['templates/google_analytics/*.html']},
       classifiers=['Development Status :: 4 - Beta',
                    'Environment :: Web Environment',
