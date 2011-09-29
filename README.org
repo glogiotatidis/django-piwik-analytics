@@ -17,8 +17,11 @@ requires it to be installed.
  1. Download and install django-google-analytics
     - You need django-google-analytics with changes. Until merge
       upstream get it from [[http://www.github.com/glogiotatidis/django-google-analytics/][this repo]]
+
       ~$ pip install -e git://github.com/glogiotatidis/django-google-analytics.git#egg=google_analytics
+
  2. Download and install django-piwik-analytics
+
     ~$ pip install -e git://github.com/glogiotatidis/django-piwik-analytics.git#egg=piwik_analytics
 
 ** Usage
