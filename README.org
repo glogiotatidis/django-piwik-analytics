@@ -25,7 +25,7 @@ requires it to be installed.
     {% load piwik_analytics %}
 
  3. In the same template, insert the following code right before the
-    colosing body tag:
+    closing body tag:
 
     {% piwik_analytics "url example.com/piwik/ id 1" %}
 
@@ -44,7 +44,7 @@ requires it to be installed.
     {% load piwik_analytics %}
 
  7. In the same template, insert the following code right before the
-    colosing body tag:
+    closing body tag:
 
     {% piwik_analytics %}
 
